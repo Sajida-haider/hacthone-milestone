@@ -638,18 +638,26 @@ h1 {
   color: white; /* White color on hover */
 }
 .footer {
-  margin-top: auto;
-  display: flex;
-  background-color: #00adb5; /* Footer background color */
-  color: white; /* Text color */
-  text-align: center; /* Center the text */
-  padding: 10px 0; /* Top and bottom padding */
-   /* Positioning for footer */
-  bottom: 0;
-  gap: 20px; /* Align to the bottom of the page */
-  justify-content: center;
-}
-.footer-icons{
-  gap: 50px;
+  background-color: #00adb5;
+  color: #fff;
   text-align: center;
+  padding: 20px 0;
+}
+
+.footer-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 1.5rem;
+}
+
+.footer-icons svg {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer-icons svg:hover {
+  transform: scale(1.2);
+  color: #00AB79; /* Change color on hover */
 }
