@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title> Editable Resume Builder</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+</head>
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f4f7fa;
+    }
+
+    #resumePreview {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        width: 80%;
+        display: none;
+    }
+</style>
+
+<body>
+
+    <form id="resumeForm">
+        <h2>Resume Builder</h2>
+        <input type="text" id="name" placeholder="Your Name"><br><br>
+        <input type="email" id="email" placeholder="Your Email"><br><br>
+        <input type="text" id="phone" placeholder="Your Phone"><br><br>
+        <input type="text" id="degree" placeholder="Degree"><br><br>
+        <input type="text" id="institution" placeholder="Institution"><br><br>
+        <textarea id="skills" placeholder="Skills"></textarea><br><br>
+        <textarea id="experience" placeholder="Experience"></textarea><br><br>
+
+        <button type="button" id="generateBtn">Generate Resume</button>
+        <button type="button" id="clearBtn">Clear Form</button>
+        <button type="button" id="savePDFBtn">Save as PDF</button>
+    </form>
+<!--Daynamic and Editabla Resume-->
+    <div id="resumePreview"contenteditable="true"  >
+        <h2>Resume Preview</h2>
+        <p><b>Name:</b> <span id="displayName"></span></p>
+        <p><b>Email:</b> <span id="displayEmail"></span></p>
+        <p><b>Phone:</b> <span id="displayPhone"></span></p>
+        <p><b>Degree:</b> <span id="displayDegree"></span></p>
+        <p><b>Institution:</b> <span id="displayInstitution"></span></p>
+        <p><b>Skills:</b> <span id="displaySkills"></span></p>
+        <p><b>Experience:</b> <span id="displayExperience"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
