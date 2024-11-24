@@ -1,0 +1,103 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Main container for the resume */
+.resume-container {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    background-color: #2b2b2b;
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Left section */
+.left-section {
+    width: 35%;
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+/* Right section */
+.right-section {
+    width: 65%;
+    padding: 20px;
+    background-color: #4a4a4a;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #00ADB5;
+    margin-bottom: 10px;
+}
+
+/* Section heading styles */
+h3 {
+    font-size: 1.2rem;
+    color: #00ADB5;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+/* Text styling */
+p, ul {
+    color: #ddd;
+    margin-bottom: 8px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+a {
+    color: #00ADB5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Toggle Button */
+#toggle-skills {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #00ADB5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#toggle-skills:hover {
+    background-color: #008c9e;
+}

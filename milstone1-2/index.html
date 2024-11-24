@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Interactive Resume</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Left section-->
+        <div class="left-section">
+            <img src="profile.jpg" alt="profile picture" class="profile-picture" />
+            <section id="objective">
+                <h3 style="color: white;">Career Objective</h3>
+                <p style="color: azure; text-align: justify;">
+                    "I am Sajida, an experienced web developer eager to contribute my technical skills and project experience to XYZ company. Please review my resume and consider me for an interview."
+                </p>
+            </section>
+
+            <section id="certification">
+                <h3 style="color: white;">Certification</h3>
+                <p style="color: azure;">B.Ed from Government Elementary College</p>
+                <p style="color: azure;">Governor Initiative AI Generative Meta 3 (ongoing)</p>
+            </section>
+        </div>
+
+        <!-- Right section -->
+        <div class="right-section">
+            <h1>Static Interactive Resume</h1>
+            <!-- Personal Information -->
+            <section id="personal-info">
+                <h3>Personal Information</h3>
+                <p><b>Name:</b> Syeda Sajida</p>
+                <p><b>Phone:</b> 0333-3567890</p>
+                <p><b>Email:</b> <a href="mailto:xyz@gmail.com">xyz@gmail.com</a></p>
+            </section>
+
+            <!-- Education Information -->
+            <section id="education">
+                <h3>Education</h3>
+                <p><b>Government Elementary School:</b> Karachi, Sindh</p>
+                <p><b>Bachelor's Degree:</b> Computer Science</p>
+            </section>
+
+            <!-- Skills -->
+            <section id="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Communication Skills</li>
+                    <li>Node.js</li>
+                </ul>
+            </section>
+
+            <!-- Work Experience -->
+            <section id="work-exp">
+                <h3>Work Experience</h3>
+                <p>
+                    <b>Company Name:</b> XYZ <a href="https://www.linkedin.com/company/company-name/">Company Name</a><br />
+                    <b>Position:</b> Web Developer<br />
+                    <b>Duration:</b> 2 years<br />
+                    <b>Responsibilities:</b>
+                </p>
+                <ul>
+                    <li>Built responsive web pages using HTML, CSS, and JavaScript</li>
+                    <li>Developed interactive features using React</li>
+                    <li>Collaborated with team members to ensure smooth development and deployment</li>
+                </ul>
+            </section>
+
+            <!-- Toggle Button -->
+            <button id="toggle-skills"><b>Hide/Show Skills</b></button>
+        </div>
+    </div>
+
+    <!-- JavaScript for Toggle Skills -->
+    <script>
+        const toggleButton = document.getElementById('toggle-skills');
+        const skills = document.getElementById('skills');
+        toggleButton.addEventListener('click', () => {
+            if (skills.style.display === 'none') {
+                skills.style.display = 'block';
+            } else {
+                skills.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
+
+   
