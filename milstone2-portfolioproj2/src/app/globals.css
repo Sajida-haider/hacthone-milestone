@@ -1,0 +1,17 @@
+/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 173, 181, 0.6), 0 0 20px rgba(0, 173, 181, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 30px rgba(0, 173, 181, 1), 0 0 60px rgba(0, 173, 181, 0.8);
+  }
+}
+
+.animate-glow {
+  animation: glow 2s infinite alternate;
+}
